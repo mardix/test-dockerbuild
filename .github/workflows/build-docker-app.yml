@@ -6,7 +6,7 @@ on:
     branches: ['main']
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}-${{ $GITHUB_REF_NAME }}-app
+  IMAGE_NAME: ${{ github.repository }}-${ GITHUB_REF_NAME }-app
   BUILD_DOCKERFILE: ./Dockerfile
 
 jobs:
