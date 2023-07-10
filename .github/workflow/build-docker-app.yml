@@ -7,7 +7,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}-$GITHUB_REF_NAME-app
-  BUILD_DOCKERFILE: ./Dockefile
+  BUILD_DOCKERFILE: ./Dockerfile
 
 jobs:
   build-and-push-image-app:
