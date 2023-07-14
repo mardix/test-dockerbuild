@@ -16,5 +16,6 @@ COPY . ./
 # Install production dependencies.
 RUN pip install --no-cache-dir -r requirements.txt -U 
 
+CMD exec gunicorn --workers 4 --threads 1 --timeout 0 "main:run_mqs()"
 
-CMD ["python", "main.py"]
+
